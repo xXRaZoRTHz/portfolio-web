@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body id="bg-contacto">
+    <header>
+        <div>
+            <p><a href="index.html">Bootcamp</a></p>
+        </div>
+        <nav>
+            <a href="#aprender/index.html">O que irás aprender</a>
+            <a href="#instrutor">Instrutores</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+    </header>
+    <div class="container-form">
+        <h2>Bootcamp</h2>
+        <!-- method post é o tipo de envio é para esconder os textos que aparecem na barra de pesquisa -->
+        <!-- aria-required o campo é obrigatorio preencher+deficientes visuais -->
+        <form action="sucesso.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" aria-required="true">
+
+            <label for="type">Email:</label>
+            <input type="email" name="email" id="email" aria-required="true">
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" name="assunto" id="assunto" aria-required="true">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" aria-required="true"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
